@@ -1,19 +1,17 @@
 resources:
   jobs:
-    my_1_measures:
-      name: my_1_measures
+    New_Job_Mar_18_2026_08_54_AM:
+      name: New Job Mar 18, 2026, 08:54 AM
+      tasks:
+        - task_key: 2nd_measure
+          notebook_task:
+            notebook_path: 01_hello_job
+            source: GIT
+      git_source:
+        git_url: https://github.com/mahe-builds/rabbit.git
+        git_provider: gitHub
+        git_branch: main
       queue:
         enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
 
-      # tasks:
-      #   - task_key: notebook_task
-      #     notebook_task:
-      #       notebook_path: ../path/to/notebook.ipynb
-      # email_notifications:
-      #   on_failure:
-      #     - mahisubbudhana@gmail.com
-      # trigger:
-      #   # Run this job every day, exactly one day from the last run; see https://docs.databricks.com/api/workspace/jobs/create#trigger
-      #   periodic:
-      #     interval: 1
-      #     unit: DAYS
