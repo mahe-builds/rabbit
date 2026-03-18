@@ -5,7 +5,7 @@ resources:
       tasks:
         - task_key: 2nd_measure
           notebook_task:
-            notebook_path: 01_hello_job
+            notebook_path: src/01_hello_job
             source: GIT
       git_source:
         git_url: https://github.com/mahe-builds/rabbit.git
